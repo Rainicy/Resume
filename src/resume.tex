@@ -1,0 +1,221 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+%\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+%\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\area}[2]{\hspace*{-1pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \large \textsc{\textbf{#1}}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[4]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2\\
+#3 \\%\lineunder 
+#4
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 $\bullet$  Selected Coursework:\\
+\vspace*{5pt}
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+}
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	\hspace*{-15pt}#1 & #2 \\
+\end{tabular*}}
+%% \newcommand{\headerroww}[3]
+%% {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+%% 	#1 &
+%% 	#2 \\
+%% 	#3 \\
+%% \end{tabular*}}
+\newcommand{\headerrowwf}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	\hspace*{-15pt}#1 & #2 \\
+\end{tabular*}}
+\newcommand{\headerrowww}[1]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &\\
+\end{tabular*}}
+\newcommand{\res}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+% END RESUME DEFINITIONS
+
+%%% 
+%%% % indentsection style, used for sections that aren't already in lists
+%%% % that need indentation to the level of all text in the document
+%%% \newenvironment{indentsection}[1]%
+%%% {\begin{list}{}%
+%%% 	{\setlength{\leftmargin}{#1}}%
+%%% 	\item[]%
+%%% }
+%%% {\end{list}}
+%%% 
+%%% % opposite of above; bump a section back toward the left margin
+%%% \newenvironment{unindentsection}[1]%
+%%% {\begin{list}{}%
+%%% 	{\setlength{\leftmargin}{-0.5#1}}%
+%%% 	\item[]%
+%%% }
+%%% {\end{list}}
+%%% 
+% format two pieces of text, one left aligned and one right aligned
+%%%% \newcommand{\headerrow}[2]
+%%%% {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+%%%% 	#1 &
+%%%% 	#2 \\
+%%%% \end{tabular*}}
+%%%% 
+%%%% % make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+ {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-55pt}
+
+\contact{Bingyu Wang}
+{(617) 750-6151 $\bullet$ rainicy925@gmail.com}
+{40 Island View Place P.O.Box 124, Dorchester, MA, 02125}
+{Availability: Jan - Aug, 2014}
+
+\header{Education}
+\headerrow
+{\textbf{Northeastern University}}
+{\text{Boston, MA}}
+\headerrowwf
+{\emph{College of Computer \& Information Science}}
+{\emph{Sep 2012 - Present}}
+
+\headerrowwf
+{\emph{Candidate for a Master of Science in Computer Science, GPA: 3.67/4.00}}
+{\emph{Dec 2014}}
+
+\headerrowwf
+{\textbf{Core Courses}:
+Algorithm $\cdot$ Machine Learning  $\cdot$ Parallel Data Processing in MapReduce \\
+\hspace*{54pt}$\cdot$ Computer Systems  $\cdot$ Computer Networks  $\cdot$   Programming Design Paradigm }
+{\emph{}}
+
+\hspace*{-8pt}\textbf{Honors and Activities}:
+Master Assistant for Machine Learning class (2013)
+
+\vspace*{2.5pt}
+
+\headerrow
+{\textbf{Northwestern University}}
+{\text{Xi'an, China}}
+\\
+\headerrowwf
+{\emph{Bachelor of Engineering in Software Engineering, GPA: 3.30/4.00}}
+{\emph{June 2012}}
+
+\headerrowwf
+{\textbf{Core Courses}:
+Object Oriental Technique \& \CPP, Java Program Designing  $\cdot$ Algorithm Data Structure \\
+\hspace*{54pt}$\cdot$  Web Design and Technology  $\cdot$  Database System $\cdot$ Linear Algebra $\cdot$ Probability Theory}
+{\emph{}}
+\hspace*{-8pt}\textbf{Honors and Activities}: Ranking: 7/141 
+$\cdot$ University First Scholarship (2010 - 2011)  \\
+\hspace*{104pt}$\cdot$ Excellent Student Award (2010 - 2011)
+$\cdot$ University Second Scholarship (2009)  \\
+\hspace*{104pt}$\cdot$ 1st Prize in Professional Computer Knowledge Competition (2010).
+
+
+
+\vspace*{2.5pt}
+\header{Computer Knowledge}
+\begin{achievements}
+\item Programming Languages (Proficiency):  C, \CPP, Java, Python, MATLAB
+\item Programming Languages (Familiar):  Scheme, Common Lisp
+\item Operating Systems and Databases: UNIX-Like (Mac OS X, GNU/Linux), SQL Server 2000, SQLite
+\item Web and Mobile Development: HTML, JSP, Android Development
+\end{achievements}
+
+
+\vspace*{2.5pt}
+\header{Professional Experience}
+\headerrow
+{\textbf{Federal Home Loan Bank of Boston, Boston, MA}}
+{\emph{June-Aug 2013}}
+\\
+\headerrowww
+{\emph{Information Technology Intern (Java)}}
+	\begin{achievements}
+	\item Developed a Test Automation Framework that can be easily used to test different web based \\ projects 
+	using various techniques, such as Selenium, Open2Test and Eclipse
+	\item Delivered  detailed documentations, including test script based on SharePoint, test results covering 
+	test suite execution and  screenshot, and user manuals for non-computer staff 
+	\end{achievements}
+	
+\headerrow
+{\textbf{Software Engineering Laboratory, Northwestern Univ., Xi'an, China}}
+{\emph{Feb-Nov 2011}}
+\\
+\headerrowww
+{\emph{Student Data Analyst (MATLAB)}}
+	\begin{achievements}
+	\item Designed models of data warehouse, including concept, logic and physics models
+	\item Eliminated redundant and obsolete data through applications of various algorithms
+	\item Built prediction models from vast data source using data mining techniques
+	\end{achievements}
+	
+\headerrow
+{\textbf{Xi'an JiaZhong Science and Technology Co. Ltd, Xi'an, China}}
+{\emph{June-Aug 2010}}
+\\
+\headerrowww
+{\emph{Software Engineer (Java)}}
+	\begin{achievements}
+	\item Built a news database system capable of  creating/reading/updating/deleting news in SQL Server
+	\item Coded the middleware connecting the front-end and database in SQL Server with JSP, Servlet and JavaBean techniques
+	\item Followed testing standards and completed documentation and reports
+	\end{achievements}
+
+
+\vspace*{2.5pt}
+\header{Project Experience}
+\headerrow
+{\textbf{Research on Web Page Ranking: Based on Learning to Rank Algorithms}}
+{\emph{2013}}
+	\begin{achievements}
+  \item Implemented the RankBoost and Gradient Boosting Decision Tree Algorithms to perform the web page ranking task
+  \item Improved the accuracy by building decision tree in heap structure and increased the running speed by simplifying the squared error formula and sorting the features
+  \item Reduced the running time from several hours to almost half an hour on 1GB datasets
+  \end{achievements}
+  
+\headerrow
+{\textbf{Solving The Issue of Mazes: Shortest Path Based-on Genetic Algorithm, Capstone}}
+{\emph{2012}}
+	\begin{achievements}
+  \item Coded the front-end GUI for generating and configuring mazes using MFC in \CPP
+  \item Studied and developed a new genetic algorithms (sub-optimal) to search for shortest path under various population size, length of gene,  mutation rate and crossover rate
+  \item Evaluated and assessed performance and attribute of the algorithm on various platforms
+  \end{achievements}
+
+\vspace*{2.5pt}
+\header{Interests}
+\begin{achievements}
+\item Running, yoga, video game
+\end{achievements}
+
+\end{document}
