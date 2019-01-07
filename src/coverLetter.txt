@@ -1,0 +1,13 @@
+I am Bingyu Wang from Northeastern University in Boston. I am currently a 4rd-year PhD student in Computer Science. 
+
+My research is focusing on Machine Learning/Data Mining, specifically on Multi-Label Classification problems, wherein a document/image contains multiple labels. For example, a twitter may be labeled by more than one tags or a image from Flickr represents more than one objects. Currently, I am working on modeling label dependencies and dealing with Extreme Multi-Label problems(extreme number of features, instances and labels). 
+
+My works could be applied into 1) any classification problems involving more than one targets; 2) any recommendation systems, such as recommending multiple items to users based their profile; 3) any searching systems where you want to recommend relevant documents/images for users’ search. 
+
+I am interested in any positions related to data science for summer internship in 2019.  And my availability is from May 1st to August 30th in 2019.
+
+
+## 2019
+Facebook:
+My research is focusing on Machine Learning/Data Mining, specifically on Multi-Label Classification problems, wherein a document/image contains multiple labels. For example, a news article may be related to more than one topic, e.g. both international and politics, or a picture on Instagram represents more than one objects. In particular, I am working on modeling dependencies within multiple labels and applying it on large-scale real-world data. 
+My works could be applied to, but not limited to 1) real-world classification problems (documents/image), involving more than one label; 2) recommendation system, such as recommending multiple items to users based on their preferences; 3) searching system, for example, providing the most relevant documents or images given by users' search.  

@@ -2,6 +2,8 @@
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{enumitem}
+\setlist{leftmargin=0mm}
 \textheight=10in
 \pagestyle{empty}
 %\raggedbottom
@@ -91,40 +93,40 @@
 
 \small
 \smallskip
-\vspace*{-35pt}
+\vspace*{-60pt}
 
 \contact{Bingyu Wang}
-{(617) 750-6151 $\bullet$ rainicy@ccs.neu.edu}
-{69 Park Dr, Apt 6, Boston, MA, 02215}
+{(617) 750-6151 $\bullet$ rainicy@ccs.neu.edu $\bullet$ bingyuwang.net}
+{36 Highcrest Ter., Boston, MA, 02131}
 
 \header{Education}
 \headerrow
-{\textbf{Northeastern University} \emph{Candidate for PhD of Computer Science, GPA: 3.85/4.00}}
-{\emph{2015-present}}
+{\textbf{Northeastern University} \emph{Candidate for PhD of Computer Science, GPA: 3.83/4.00}}
+{\emph{2015-Present}}
 
 % \headerrowwf
 % {\emph{Candidate for PhD of Computer Science, GPA: 3.85/4.00}}
 % {\emph{Jan.2015 - present}}
 
-\headerrowwf
-{---\textbf{Core Courses}:
-Algorithms $\cdot$ Machine Learning  $\cdot$ Data Mining $\cdot$ Information Theory }
-{\emph{}}
+% \headerrowwf
+% {---\textbf{Core Courses}:
+% Machine Learning  $\cdot$ Data Mining $\cdot$  Algorithms $\cdot$  Information Theory }
+% {\emph{}}
 
-\hspace*{-8pt}\textbf{---Teaching Assistant}:
-Machine Learning $\cdot$ Information Retrieval \\
+% \hspace*{-8pt}\textbf{---Teaching Assistant}:
+% Machine Learning $\cdot$ Information Retrieval \\
 % \hspace*{107pt} 20th ACM SIGKDD Conference (New York City, \emph{Aug 2014})
 % \hspace*{107pt} Big Data Technology Conference (Boston, \emph{April 2014})
-\vspace*{1.5pt}
+% \vspace*{1.5pt}
 
 \headerrow
-{\textbf{Northeastern University} \emph{Master of Computer Science, GPA: 3.85/4.00}}
-{\emph{Sep 2012-Dec 2014}}
+{\textbf{Northeastern University} \emph{Master of Computer Science, GPA: 3.83/4.00}}
+{\emph{2012 - 2014}}
 % {\text{Xi'an, China}}
 \\
-% \headerrowwf
-% {\emph{Bachelor of Engineering in Software Engineering, GPA: 3.30/4.00}}
-% {\emph{June 2012}}
+\headerrowwf
+{\textbf{Northwest University} \emph{BE in Software Engineering, GPA: 3.30/4.00}}
+{\emph{2008 - 2012}}
 
 % \headerrowwf
 % {\textbf{Core Courses}:
@@ -142,22 +144,23 @@ Machine Learning $\cdot$ Information Retrieval \\
 % {\emph{ACM SIGKDD 2014}}
 
 
-\vspace*{1.5pt}
+\vspace*{2.5pt}
 \header{Research Experience}
 
 \headerrow
-{\textbf{Big Data in Relationship between Air Pollution and Mortality Risk}\emph{(Ongoing)}}
-{\emph{2016-present}}
+{\textbf{Survival Analysis to Assess Association between Mortality and Air Pollution}}
+{\emph{2016-Present}}
 % \headerrowww
 % {\emph{Ongoing Project}}
 \begin{achievements}
-	\item Developed models such as Cox and Poisson Regression, to handle over 45 billion observations.
-	\item Conducted big data study to identify patterns and trends in air pollution associated-mortality risk
+	\item Scalable implementation for survival linear models, such as Cox Proportional Hazards and Poisson Regression, to handle over 64 million US Medicare enrollees from 2000 to 2012, up to 2 billion enrollee-months of follow-up. The running time is around 10 minutes on one machine (Intel Xeon CPU E5-2680 with 56 logical cores).
+	\item Efficient implementation for a non-linear Cox Proportional Hazards model with restricted cubic splines, in order to have a more flexible fitting between predictors and outcome.
+	\item Conducted big data study to assess the association between long-term exposures, like $PM_{2.5}$, $NO_{2}$, $O_3$ etc., and cause-specific mortality, including cardiovascular, respiratory, cancer etc.
 \end{achievements}
 
 \headerrow
-{\textbf{Extreme Multi-Label Classification(XCBM)}\emph{(Ongoing)}}
-{\emph{2017-present}}
+{\textbf{Extreme Multi-Label Classification(XCBM)}}
+{\emph{2017-Present}}
 % \headerrowww
 % {\emph{Ongoing Project}}
 \begin{achievements}
@@ -167,7 +170,7 @@ Machine Learning $\cdot$ Information Retrieval \\
 \end{achievements}
 
 \headerrow
-{\textbf{Regularizing Model and Label Structure for Multi-Label Classification}\emph{(Ongoing)}}
+{\textbf{Regularizing Model and Label Structure for Multi-Label Classification}}
 {\emph{2016-2017}}
 % \headerrowww
 % {\emph{Ongoing Project}}
@@ -201,15 +204,27 @@ Machine Learning $\cdot$ Information Retrieval \\
 \header{Professional Experience}
 
 \headerrow
+{\textbf{JD.Com Inc, Mountain View, CA}}
+{\emph{May-Aug 2018}}
+\\
+\headerrowww
+{\emph{Data Scientist Intern (PyTorch)}}
+	\begin{achievements}
+	\item Proposed a scalable deep learning model for the extreme multi-label classification problems.
+	\item Recognized the pattern of products data (descriptions and categories) from the electronic business platform, and improved the performance on predicting the product categories.
+	\item Built a semi-automatic data annotation tool using the multi-label classifier, to enable more productive data labeling.
+	\end{achievements}
+
+\headerrow
 {\textbf{MassMutual Financial Group, Boston, MA}}
 {\emph{Jan-June 2014}}
 \\
 \headerrowww
 {\emph{Data Analyst (Python)}}
 	\begin{achievements}
-	\item Recognized the pattern and performed analysis and predictions on the web log data of Oppenheimer Website using the Aster Express Tool from Teradata
-	\item Analyzed the MassMutual HR data and produced the predictions on the Quality of Hire
-	\item Performed twitter analysis for GeoAnalytics project to collect data from twitter using sentimental keywords and find out the areas where MassMutual can promote the sales
+	\item Recognized the pattern and performed analysis and predictions on the web log data of Oppenheimer Website using the Aster Express Tool from Teradata.
+	\item Analyzed the MassMutual HR data and produced the predictions on the Quality of Hire.
+	\item Performed twitter analysis for GeoAnalytics project to collect data from twitter using sentimental keywords and find out the areas where MassMutual can promote the sales.
 	\end{achievements}
 	
 
@@ -221,9 +236,9 @@ Machine Learning $\cdot$ Information Retrieval \\
 {\emph{Information Technology Intern (Java)}}
 	\begin{achievements}
 	\item Developed a Test Automation Framework that can easily be used to test different web based projects 
-	using various technologies, such as Selenium, Open2Test and Eclipse
+	using various technologies, such as Selenium, Open2Test and Eclipse.
 	\item Delivered  documentations, including test script based on SharePoint, test results covering 
-	test suite execution and screenshot, and user manual for non-computer staff 
+	test suite execution and screenshot, and user manual for non-computer staff.
 	\end{achievements}
 	
 % \headerrow
@@ -259,28 +274,56 @@ Machine Learning $\cdot$ Information Retrieval \\
 %   \item Reduced the running time from several hours to almost half an hour on 1GB datasets
 %   \end{achievements}
   
-\vspace*{1.5pt}
-\header{Publications}
-\headerrow
-{\textit{Gu, Chen, Sun, \textbf{Wang}.} ``Ideology Detection for Twitter Users via Link Analysis''}
-{\emph{SBP-BRiMS 2017}}
+\newpage
 
-\headerrow
-{\textit{Li, \textbf{Wang}, Pavlu, Aslam.} ``Conditional Bernoulli Mixtures for Multi-Label Classification''}
-{\emph{ICML 2016}}
+\header{Publications \& Conferences}
+\begin{itemize}
+\item Kazemiparkouhi, Eum, \textbf{Wang}, Manjourides, Suh, \textit{``Long-Term Ozone Exposures and Cause-specific Mortality in a US Medicare Cohort''}, {\emph{JESEE}} [under review];
 
-\headerrow
-{\textit{Li, \textbf{Wang}, Pavlu, Aslam.} ``An Empirical Study of Skip-gram Features and Regularization for \\Learning on Sentiment Analysis''}
-{\emph{ECIR 2016}}
+\item Eum, Kazemiparkouhi, \textbf{Wang}, Manjourides, Pun, Pavlu, Suh, \textit{``Long-Term NO2 Exposures and Cause-specific Mortality in American Older Adults''}, {\emph{Environment International 2018}};
 
-\headerrow
-{\textit{Gu, Sun, Jiang, \textbf{Wang}, Chen.} ``Topic-Factorized Ideal Point Estimation Model for Legislative \\ Voting Network''}
-{\emph{KDD 2014}}
+\item  \textbf{Wang}, Li, Pavlu, Aslam, \textit{``A Pipeline for Optimizing F1-Measure in Multi-Label Text Classification''}, {\emph{ICMLA 2018}};
+
+\item Kazemiparkouhi, Eum, \textbf{Wang}, Manjourides, Suh, \textit{``Effect of Confounding, Effect Modification, and Exposure Measures on the Association of Long-Term Ozone Exposure and Cause-Specific Mortality''}, {\emph{ISES-ISEE 2018}};
+
+\item  \textbf{Wang}, Eum, Manjourides, Kazemiparkouhi, Pavlu, Suh, \textit{``Effect Modification of the Association of Long-Term PM2.5 Exposure and Cause-Specific Mortality: An Analysis of 64 Million US Medicare Beneficiaries''}, {\emph{ISES-ISEE 2018}};
+
+\item Eum, \textbf{Wang}, Manjourides, Kazemiparkouhi, Pun, Pavlu, Suh, \textit{``Effect of Confounding, Long-Term NO2 Exposures and Cause-specific Mortality in American Older Adults''}, {\emph{ISES-ISEE 2018}};
+
+\item  Gu, Chen, Sun, \textbf{Wang}, \textit{``Ideology Detection for Twitter Users via Link Analysis''}, {\emph{SBP-BRiMS 2017}};
+
+\item Li, \textbf{Wang}, Pavlu, Aslam, \textit{``Conditional Bernoulli Mixtures for Multi-Label Classification''}, {\emph{ICML 2016}};
+
+\item Li, \textbf{Wang}, Pavlu, Aslam, \textit{``An Empirical Study of Skip-gram Features and Regularization for Learning on Sentiment Analysis''}, {\emph{ECIR 2016}};
+
+\item Gu, Sun, Jiang, \textbf{Wang}, Chen, \textit{``Topic-Factorized Ideal Point Estimation Model for Legislative Voting Network''}, {\emph{KDD 2014}}.
+
+\end{itemize}
+% \end{achievements}
+% \vspace*{1.5pt}
+% \header{Publications}
+% \headerrow
+% {\textit{\textbf{Wang}, Li, Pavlu, Aslam} ``A Pipeline for Optimizing F1-Measure in Multi-Label Text Classification''} {\emph{ICMLA 2018}}
+% \headerrow
+% {\textit{Gu, Chen, Sun, \textbf{Wang}.} ``Ideology Detection for Twitter Users via Link Analysis''}
+% {\emph{SBP-BRiMS 2017}}
+
+% \headerrow
+% {\textit{Li, \textbf{Wang}, Pavlu, Aslam.} ``Conditional Bernoulli Mixtures for Multi-Label Classification''}
+% {\emph{ICML 2016}}
+
+% \headerrow
+% {\textit{Li, \textbf{Wang}, Pavlu, Aslam.} ``An Empirical Study of Skip-gram Features and Regularization for \\Learning on Sentiment Analysis''}
+% {\emph{ECIR 2016}}
+
+% \headerrow
+% {\textit{Gu, Sun, Jiang, \textbf{Wang}, Chen.} ``Topic-Factorized Ideal Point Estimation Model for Legislative \\ Voting Network''}
+% {\emph{KDD 2014}}
 
 
 \vspace*{1.5pt}
 \header{Computer Knowledge}
-Java, Python, MATLAB, LaTex, D3js
+Machine Learning, Data Mining, Java, Python, PyTorch, R, MATLAB, LaTex, D3js
 % \begin{achievements}
 % \item Programming Languages (Proficiency): Java, Python, MATLAB
 % \item Programming Languages (Familiar):  C, \CPP,  LaTex
